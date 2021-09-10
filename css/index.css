@@ -143,12 +143,16 @@ button:hover{
         font-size: 90%;
     }
      
+    nav span{
+        border-left:2px solid #626262;
     
+    }
     .title-container div{
         
         height: 250px;
         background-position: center;
         margin:2% 0;
+        margin-top: 4%;
     }
     
     h1{
@@ -192,5 +196,10 @@ button:hover{
     
     }
 
-
+    a[href*="Home"]{
+       
+        font-weight: bold;
+    }
+  
+    
 }
