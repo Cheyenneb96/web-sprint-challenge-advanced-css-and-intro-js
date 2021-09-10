@@ -273,13 +273,14 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, number) {
-  const index = artists.indexOf(number);
-  
-  return artists.length
+function removeArtist(array, index) {
+  if (index > -1) {
+    array.splice(index, 1)
+  }
+  return array.length
 }
 
-console.log ( "task 5;", removeArtist(0));
+console.log ( "task 5;", removeArtist(artists, 0));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
