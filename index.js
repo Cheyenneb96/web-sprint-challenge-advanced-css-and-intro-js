@@ -81,7 +81,7 @@ const artists = [
   },
   {
     "id": 8,
-    "name": "Vincent van Dough",
+    "name": "Vincent van Gough",
     "years": "1853 - 1890",
     "genre": "Post-Impressionism",
     "nationality": "Dutch",
@@ -217,6 +217,7 @@ console.log(artists[3])
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
+console.log(artists[8])
 
 
 
@@ -228,11 +229,13 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array, number) {
+  const id= "id"
+  const name= "name"
+ return `the artist at index ${array[number].id} is ${array[number].name}`
 }
 
-
+console.log ( "task 3;", getArtistByIndex(artists, 4));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
